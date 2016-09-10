@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="false">I-Skill</string>
+    <!-- Login activity text -->
+    <string name="username_prompt">Username or email</string>
+    <string name="sign_in_text">Sign in</string>
+    <string name="password_prompt">Password</string>
+    <string name="create_account">Create an account</string>
+    <!-- Errors -->
+    <string name="empty_user_err">Username cannot be empty</string>
+    <string name="empty_pass_err">Password cannot be empty</string>
+    <string name="wrong_creds_err">Username or password incorrect.</string>
+
+    <!-- General use strings -->
+    <string name="server_domain">example.com</string>
+    <!-- Errors -->
+    <string name="error">Error</string>
+    <string name="no_network_diag">Internet not available. Check your internet connectivity.</string>
+    <string name="req_error_diag">Error loading data. We are now working to fix it. Please try again later.</string>
+
+
+</resources>
