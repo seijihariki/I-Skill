@@ -48,6 +48,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login_activity);
 
         authenticating = false;
 
@@ -135,7 +136,6 @@ public class LoginActivity extends AppCompatActivity {
                             }, new Response.ErrorListener() {
                                 @Override
                                 public void onErrorResponse(VolleyError error) {
-                                    AlertDialog network_error_dialog = new AlertDialog.Builder(getApplicationContext()).create();
                                     network_error_dialog.setMessage(getString(R.string.req_error_diag));
                                     network_error_dialog.show();
                                     Log.e(TAG, "Volley request failed. Stack trace: ");
@@ -161,13 +161,10 @@ public class LoginActivity extends AppCompatActivity {
         network_error_dialog = new AlertDialog.Builder(this).create();
         network_error_dialog.setIcon(android.R.drawable.ic_dialog_alert);
         network_error_dialog.setTitle(getString(R.string.error));
-        network_error_dialog.setButton(0, "OK", new DialogInterface.OnClickListener() {
+        network_error_dialog.setButton(DialogInterface.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                finish();
             }
         });
-
-        setContentView(R.layout.activity_login_activity);
     }
 }
