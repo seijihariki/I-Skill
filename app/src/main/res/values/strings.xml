@@ -6,16 +6,26 @@
     <string name="password_prompt">Password</string>
     <string name="create_account">Create an account</string>
     <!-- Errors -->
-    <string name="empty_user_err">Username cannot be empty</string>
-    <string name="empty_pass_err">Password cannot be empty</string>
+    <string name="empty_field_err">Field cannot be empty</string>
     <string name="wrong_creds_err">Username or password incorrect.</string>
 
     <!-- General use strings -->
-    <string name="server_domain">example.com</string>
+
+    <!-- Server path strings -->
+    <string name="server_domain">https://linux.ime.usp.br/~seijihariki/ISkill</string>
+    <string name="server_login">/app/login.php</string>
+
+    <!-- Menu names -->
+    <string name="action_settings">Settings</string>
+
     <!-- Errors -->
     <string name="error">Error</string>
     <string name="no_network_diag">Internet not available. Check your internet connectivity.</string>
+    <string name="network_err_diag">Network error. Check your internet connectivity.</string>
     <string name="req_error_diag">Error loading data. We are now working to fix it. Please try again later.</string>
 
+    <!-- Storage IDs -->
+    <string name="auth_file_key">authenticationStorage</string>
+    <string name="jwt_token_key">jwtToken</string>
 
 </resources>
